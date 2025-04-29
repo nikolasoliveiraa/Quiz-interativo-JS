@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Interativo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="quiz-container">
+    <!-- Adicionando uma imagem acima da pergunta -->
+    <img id="question-image" src="assets/img/gradient-illustration-cartoon-quiz-symbol-png.webp" alt="Imagem do Quiz" style="display: block; margin: 0 auto;" />
+    
+    <h2 id="question">Pergunta aqui</h2>
+
+    <div id="answers">
+      <label><input type="radio" name="answer" value="0" /> <span id="opt0">Opção 1</span></label><br />
+      <label><input type="radio" name="answer" value="1" /> <span id="opt1">Opção 2</span></label><br />
+      <label><input type="radio" name="answer" value="2" /> <span id="opt2">Opção 3</span></label><br />
+      <label><input type="radio" name="answer" value="3" /> <span id="opt3">Opção 4</span></label><br />
+    </div>
+
+    <button id="next">Próxima</button>
+
+    <div id="score-container" style="display: none;">
+      <h2 id="score"></h2>
+      <button onclick="location.reload()">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
